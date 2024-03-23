@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grasses of Jamaica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            flex-wrap: wrap; /* Allows wrapping for smaller screens */
+        }
+
+        .card {
+            width: calc(20% - 40px);
+            margin: 20px;
+            background-color: #f2f2f2;
+            text-decoration: none;
+            color: black;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150px; /* Fixed height for equal card size */
+        }
+
+        /* Unique colors for each card */
+        .zoysia { background-color: #a2d9ce; }
+        .bermuda { background-color: #f9e79f; }
+        .st-augustine { background-color: #aed6f1; }
+        .bahia { background-color: #f5b7b1; }
+        .centipede { background-color: #d7bde2; }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        @media screen and (max-width: 800px) {
+            .card {
+                width: calc(50% - 40px); /* Adjusts to 2 cards per row on smaller screens */
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .card {
+                width: calc(100% - 40px); /* Adjusts to 1 card per row on very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Grasses of Jamaica</h1>
+    </header>
+    <main>
+        <section class="card-container">
+            <a href="zoysia.html" class="card zoysia">
+                <h2>Zoysia Grass</h2>
+            </a>
+            <a href="bermuda.html" class="card bermuda">
+                <h2>Bermuda Grass</h2>
+            </a>
+            <a href="st-augustine.html" class="card st-augustine">
+                <h2>St. Augustine Grass</h2>
+            </a>
+            <a href="bahia.html" class="card bahia">
+                <h2>Bahia Grass</h2>
+            </a>
+            <a href="centipede.html" class="card centipede">
+                <h2>Centipede Grass</h2>
+            </a>
+        </section>
+    </main>
+</body>
+</html>
