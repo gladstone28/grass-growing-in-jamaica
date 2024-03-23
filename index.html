@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,21 +12,22 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         header {
             background-color: #4CAF50;
             color: white;
             padding: 10px 20px;
             text-align: center;
         }
-
+        
         .card-container {
             display: flex;
             justify-content: space-around;
             padding: 20px;
-            flex-wrap: wrap; /* Allows wrapping for smaller screens */
+            flex-wrap: wrap;
+            /* Allows wrapping for smaller screens */
         }
-
+        
         .card {
             width: calc(20% - 40px);
             margin: 20px;
@@ -33,38 +35,72 @@
             text-decoration: none;
             color: black;
             border: 1px solid #ddd;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             transition: transform 0.2s;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 150px; /* Fixed height for equal card size */
+            height: 150px;
+            /* Fixed height for equal card size */
         }
-
         /* Unique colors for each card */
-        .zoysia { background-color: #a2d9ce; }
-        .bermuda { background-color: #f9e79f; }
-        .st-augustine { background-color: #aed6f1; }
-        .bahia { background-color: #f5b7b1; }
-        .centipede { background-color: #d7bde2; }
-
+        
+        .zoysia {
+            background-color: #a2d9ce;
+        }
+        
+        .bermuda {
+            background-color: #f9e79f;
+        }
+        
+        .st-augustine {
+            background-color: #aed6f1;
+        }
+        
+        .bahia {
+            background-color: #f5b7b1;
+        }
+        
+        .centipede {
+            background-color: #d7bde2;
+        }
+        
         .card:hover {
             transform: scale(1.05);
         }
-
+        
         @media screen and (max-width: 800px) {
             .card {
-                width: calc(50% - 40px); /* Adjusts to 2 cards per row on smaller screens */
+                width: calc(50% - 40px);
+                /* Adjusts to 2 cards per row on smaller screens */
             }
         }
-
+        
         @media screen and (max-width: 600px) {
             .card {
-                width: calc(100% - 40px); /* Adjusts to 1 card per row on very small screens */
+                width: calc(100% - 40px);
+                /* Adjusts to 1 card per row on very small screens */
             }
         }
+        
+        footer {
+            text-align: center;
+            padding: 20px 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
     </style>
+
 </head>
+
 <body>
     <header>
         <h1>Grasses of Jamaica</h1>
@@ -88,5 +124,9 @@
             </a>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2024 Quality Solutions Limited (QSL). All rights reserved.</p>
+    </footer>
 </body>
+
 </html>

@@ -18,26 +18,61 @@ main {
     padding: 20px;
 }
 
+footer {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #4CAF50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
 .card {
-    width: 90%; /* Adjust the width as needed */
-    max-width: 600px; /* Ensures the card does not become too wide on larger screens */
-    background-color: #f2f2f2; /* Default background color */
+    width: 90%;
+    /* Adjust the width as needed */
+    max-width: 600px;
+    /* Ensures the card does not become too wide on larger screens */
+    background-color: #f2f2f2;
+    /* Default background color */
     border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     margin: 20px 0;
     padding: 20px;
     box-sizing: border-box;
 }
 
+
 /* Specific colors for each grass type */
-.zoysia-card { background-color: #a2d9ce; }
-.bermuda-card { background-color: #f9e79f; }
-.st-augustine-card { background-color: #aed6f1; }
-.bahia-card { background-color: #f5b7b1; }
-.centipede-card { background-color: #d7bde2; }
+
+.zoysia-card {
+    background-color: #a2d9ce;
+}
+
+.bermuda-card {
+    background-color: #f9e79f;
+}
+
+.st-augustine-card {
+    background-color: #aed6f1;
+}
+
+.bahia-card {
+    background-color: #f5b7b1;
+}
+
+.centipede-card {
+    background-color: #d7bde2;
+}
 
 button {
-    background-color: #4CAF50; /* Button color */
+    background-color: #4CAF50;
+    /* Button color */
     color: white;
     border: none;
     padding: 10px 20px;
